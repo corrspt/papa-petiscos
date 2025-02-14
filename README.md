@@ -1,2 +1,0 @@
-# papa-petiscos
-Papá Petiscos
