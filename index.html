@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papá Petiscos - Menu</title>
+    <style>
+      /* Reset default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Header styling */
+      header {
+        background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      header img {
+        max-width: 150px;
+        height: auto;
+      }
+
+      /* Menu container */
+      .menu-container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 0 20px;
+      }
+
+      /* Individual menu items */
+      .menu-item {
+        padding: 20px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .menu-item:last-child {
+        border-bottom: none;
+      }
+
+      /* Header for each menu item: name and price */
+      .menu-item-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu-item-header strong {
+        font-size: 1.2em;
+      }
+
+      /* Description styling */
+      .menu-item-description {
+        margin-top: 8px;
+        color: #777;
+        font-size: 0.95em;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .menu-item-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .menu-item-header strong + strong {
+          margin-top: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./logo.jpg" width="200px" alt="Nana Petiscos Logo" />
+      <h1>Papá Petiscos</h1>
+    </header>
+
+    <div class="menu-container">
+      <!-- Menu Item 1 -->
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <strong>Ovos Mexidos com Farinheira</strong>
+          <strong>$0</strong>
+        </div>
+        <div class="menu-item-description">
+          Uma deliciosa mistura de Ovos Mexidos com Farinheira
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <strong>Crepe Chinês</strong>
+          <strong>$10.50</strong>
+        </div>
+        <div class="menu-item-description">
+          Crepe Chinês, directamente da Tailândia
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <strong>Spicy Chicken Petiscos</strong>
+          <strong>$9.75</strong>
+        </div>
+        <div class="menu-item-description">
+          Tender chicken bites marinated in a blend of spices and grilled to
+          perfection.
+        </div>
+      </div>
+
+      <!-- Menu Item 4 -->
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <strong>Chorizo & Pepper Medley</strong>
+          <strong>$11.25</strong>
+        </div>
+        <div class="menu-item-description">
+          A robust mix of chorizo and bell peppers, slow-cooked for an intense
+          flavor.
+        </div>
+      </div>
+
+      <!-- Menu Item 5 -->
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <strong>Cheesy Spinach Bites</strong>
+          <strong>$7.50</strong>
+        </div>
+        <div class="menu-item-description">
+          Crispy pastry filled with melted cheese and fresh spinach.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
